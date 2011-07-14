@@ -8,6 +8,7 @@ Stable tag: 1.0
 
 Automatic version control for posts with the same prefix in the post_name
 
+
 == Description ==
 
 Posts can be grouped in many ways in Wordpress but there is no direct version control system. This plugin offers a lightweight solution if you want version control for a group of posts. 
@@ -24,6 +25,7 @@ This plugin will automatically:
 
 This is especially practical for bloggers that often revisit older subjects and have to do the linking with the updated posts manually. Or if you are like me and publish material that has versioning applied to it (ex. software) through a blogging platform.
 
+
 == Installation ==
 
 1. Upload the directory "post-version-control" into your wp-content/plugins directory
@@ -32,6 +34,7 @@ This is especially practical for bloggers that often revisit older subjects and 
 4. Define the keywords you want to track for your version control groups and the URL you want to use for the latest post.
 
 More detailed information is provided in the "Usage" section of this document. 
+
 
 == Frequently Asked Questions ==
 
@@ -54,7 +57,6 @@ When using the script you should know that:
 
 Contact me at [Make Sites](http://www.makesites.cc/contact/ "This is yet another Make Sites production")
 
-== Screenshots ==
 
 == Usage ==
 
@@ -68,15 +70,16 @@ There you will find two fields:
 
 To link a post to a version control group of posts all you need to do is enter the keyword of that group as a prefix to the post_name of that post. So in the group "ajax" mentioned earlier all posts in that group should start with the "ajax-" prefix. An example list of that group of posts might be: 
 
-ajax-first-post
-ajax-updated-version
-ajax-latest-news
+1. ajax-first-post
+2. ajax-updated-version
+3. ajax-latest-news
 
 ..and so on. 
 
 The plugin will automatically look through your posts of the same group and label the older ones by inserting an &lt;!-- outdated --&gt; tag. This is replaced by the content of "outdated.html" in runtime. This is an example of how you can style your outdated tag. Just insert it along with your other styles: 
 
-<style>
+&lt;style&gt;
+
 p.outdated{
   border: dashed 1px #f00;
   background: #eee;
@@ -87,9 +90,10 @@ p.outdated{
 p.outdated a {
   color: #f00;
 }
-</style>
 
-Uninstalling should be pretty easy too. The only left overs are the <!-- outdated: ... --> comments in the post's content which of course are ignored when viewing the webpage. If you don't mind that you don't have to do anything else apart from de-activating the plugin through your Wordpress administration. 
+&lt;/style&gt;
+
+Uninstalling should be pretty easy too. The only left overs are the &lt;!-- outdated: ... --&gt; comments in the old posts content which of course are ignored when viewing the webpage. If you don't mind that you don't have to do anything else apart from de-activating the plugin through your Wordpress administration. 
 
 == License ==
 
